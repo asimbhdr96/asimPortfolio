@@ -11,6 +11,7 @@ export const site = {
   githubHandle: "asimbhdr96",
   // Replace with your real LinkedIn URL. Leave empty to hide the link.
   linkedin: "https://www.linkedin.com/in/asimyaramis/",
+  linkedinHandle: "asimyaramis",
   // Update if you deploy to a custom domain.
   url: "https://asimyaramis.netlify.app",
   description:

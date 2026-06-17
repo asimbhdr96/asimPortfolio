@@ -65,7 +65,7 @@ export function Contact() {
                       rel="noreferrer"
                       className="link-underline text-lg text-ink transition-colors hover:text-accent"
                     >
-                      Connect
+                      @{site.linkedinHandle}
                     </a>
                   </dd>
                 </div>
