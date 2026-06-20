@@ -32,10 +32,8 @@ export function Projects() {
                     <h3 className="font-serif text-3xl leading-tight text-ink transition-colors group-hover:text-accent sm:text-4xl">
                       {project.name}
                     </h3>
-                    <p className="flex items-center gap-2 font-mono text-[0.7rem] tracking-wide text-muted uppercase">
-                      <span>{project.kind}</span>
-                      <span className="h-1 w-1 rounded-full bg-faint" aria-hidden />
-                      <span>{project.year}</span>
+                    <p className="font-mono text-[0.7rem] tracking-wide text-muted uppercase">
+                      {project.kind}
                     </p>
                   </div>
                 </div>
@@ -58,6 +56,16 @@ export function Projects() {
                       </li>
                     ))}
                   </ul>
+                  {project.repo ? (
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-5 inline-flex items-center gap-2 font-mono text-xs tracking-wide text-accent transition-opacity hover:opacity-70"
+                    >
+                      View source →
+                    </a>
+                  ) : null}
                 </div>
               </article>
             </Reveal>

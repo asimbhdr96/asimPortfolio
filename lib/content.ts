@@ -55,17 +55,16 @@ export const about = {
 export type Project = {
   name: string;
   kind: string;
-  year: string;
   summary: string;
   description: string;
   tags: string[];
+  repo?: string;
 };
 
 export const projects: Project[] = [
   {
     name: "Mnemo",
     kind: "AI Mobile App",
-    year: "2025",
     summary:
       "A mobile app that turns everything you save — notes, links, screenshots — into a searchable memory you can ask in plain language.",
     description:
@@ -82,24 +81,23 @@ export const projects: Project[] = [
   {
     name: "Marginalia",
     kind: "AI Learning App",
-    year: "2025",
     summary:
       "A study app that turns book PDFs and long articles into flashcards, then trains you on them with a daily, game-like streak.",
     description:
-      "Uploaded PDFs and articles are chunked and distilled into question-and-answer flashcards, then scheduled by a spaced-repetition engine. A Duolingo-style daily loop — streaks, levels, and bite-sized sessions — keeps the material sticking long after the first read.",
+      "Local-first Expo app: PDFs and articles are chunked on-device, distilled into Q&A flashcards via Gemini (or an offline mock), then scheduled by an SM-2 spaced-repetition engine. SQLite stores everything; streaks, XP, and bite-sized sessions keep the habit going.",
     tags: [
       "React Native",
       "Expo",
-      "NestJS",
-      "LLM",
+      "SQLite",
+      "Gemini API",
       "Spaced Repetition",
       "PDF Parsing",
     ],
+    repo: "https://github.com/asimbhdr96/marginalia",
   },
   {
     name: "Vellum UI",
     kind: "Design System",
-    year: "2025",
     summary:
       "A token-driven React Native component library that keeps an entire product suite visually consistent across iOS, Android, and web — from one codebase.",
     description:
@@ -111,11 +109,11 @@ export const projects: Project[] = [
       "Theming",
       "New Architecture",
     ],
+    repo: "https://github.com/asimbhdr96/vellum-ui",
   },
   {
     name: "Draftline",
     kind: "AI Feature",
-    year: "2024",
     summary:
       "An in-app assistant that drafts, summarizes, and answers from a user's own content with fast, streaming responses.",
     description:
@@ -125,7 +123,6 @@ export const projects: Project[] = [
   {
     name: "Recon",
     kind: "On-device Vision",
-    year: "2023",
     summary:
       "Real-time object detection running entirely on-device, turning a phone camera into a live inspection tool.",
     description:
