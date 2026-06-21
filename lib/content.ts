@@ -63,22 +63,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "Mnemo",
-    kind: "AI Mobile App",
-    summary:
-      "A mobile app that turns everything you save — notes, links, screenshots — into a searchable memory you can ask in plain language.",
-    description:
-      "A NestJS service generates vector embeddings for every captured item and indexes them in OpenSearch for k-NN semantic retrieval, so results rank by meaning instead of keywords. The retrieved context feeds a grounded, streaming answer back to the React Native client.",
-    tags: [
-      "React Native",
-      "NestJS",
-      "OpenSearch",
-      "Vector Embeddings",
-      "Semantic Search",
-      "RAG",
-    ],
-  },
-  {
     name: "Marginalia",
     kind: "AI Learning App",
     summary:
@@ -112,13 +96,21 @@ export const projects: Project[] = [
     repo: "https://github.com/asimbhdr96/vellum-ui",
   },
   {
-    name: "Draftline",
-    kind: "AI Feature",
+    name: "Anvil",
+    kind: "Agentic CLI / AI Systems",
     summary:
-      "An in-app assistant that drafts, summarizes, and answers from a user's own content with fast, streaming responses.",
+      "A CLI that runs multi-agent research pipelines — parallel branches, grounded citations, and a scored report you can inspect, replay, and diff.",
     description:
-      "Streaming LLM responses with tool-calling and client-side redaction of sensitive fields before anything leaves the device. A typed NestJS service handles orchestration, caching, and rate limiting behind the scenes.",
-    tags: ["React Native", "Node.js", "NestJS", "LLM", "Streaming"],
+      "Ask a technical question; a planner decomposes it, researcher agents fan out with Gemini + Google Search grounding, and a synthesizer merges typed artifacts into a decision-ready report. Schema contracts between agents, a critic–repair loop, and an eval rubric score every run — with full event sourcing to trace.jsonl.",
+    tags: [
+      "TypeScript",
+      "Multi-agent",
+      "Schema Contracts",
+      "Eval Harness",
+      "Event Sourcing",
+      "CLI",
+    ],
+    repo: "https://github.com/asimbhdr96/anvil",
   },
   {
     name: "Recon",
